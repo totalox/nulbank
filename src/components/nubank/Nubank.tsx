@@ -10,16 +10,21 @@ export default function Nubank() {
           showsHorizontalScrollIndicator={false}
         >
           <View style={style.header}>
-
-          <Image source={uri} />
-
+            <View style={style.headerContent}>testing</View>
           </View>
-
-
 
           <View style={style.containerCircles}>
             <View style={style.circle}>
-                <Text>Texto</Text>
+              <Image style={style.contentCircle}></Image>
+            </View>
+            <View style={style.circle}>
+              <Image style={style.contentCircle}></Image>
+            </View>
+            <View style={style.circle}>
+              <Image style={style.contentCircle}></Image>
+            </View>
+            <View style={style.circle}>
+              <Image style={style.contentCircle}></Image>
             </View>
             <View style={style.circle}></View>
           </View>
@@ -41,7 +46,10 @@ const style = StyleSheet.create({
   },
   header: {
     backgroundColor: "#8b19d6",
-    padding: 80,
+    padding: 100,
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    flexDirection: 'row'
   },
   lineGray: {
     backgroundColor: "#d9d9d9",
@@ -56,16 +64,29 @@ const style = StyleSheet.create({
     padding: 0,
   },
   containerCircles: {
-    gap: 15,
+    gap: 6,
     display: "flex",
     flexDirection: "row",
     backgroundColor: "#123456",
     height: 700,
   },
   circle: {
-    height: 80,
-    width: 80,
+    height: 100,
+    width: 100,
     borderRadius: 200,
     backgroundColor: "#f0f1f5",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 220,
+    marginLeft: 20,
+  },
+  contentCircle: {
+    display: "none",
+  },
+  headerContent: {
+    backgroundColor: "#d8d8d815",
+    height: 100,
+    width: 100,
+    borderRadius: 50
   },
 });
