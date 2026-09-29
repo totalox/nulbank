@@ -11,38 +11,17 @@ export default function Nubank() {
         >
           {/* STACK "HEADER" */}
           <View style={style.header}>
-            <View style={style.circlePerfil}>
-              <Image style={style.contentCirclePerfil} />
-            </View>
+            <View style={style.circlePerfil}></View>
             <View style={style.containerLoco}>
-              <View style={style.circlePerfil}>
-                <Image style={style.contentCirclePerfil} />
-              </View>
-              <View style={style.circlePerfil}>
-                <Image
-                  style={{ width: 20, height: 20 }}
-                  source={require("../../../assets/credit.svg")}
-                />
-              </View>
-              <View style={style.circlePerfil}>
-                <Image style={style.contentCirclePerfil} />
-              </View>
+              <View style={style.circlePerfil}></View>
+              <View style={style.circlePerfil}></View>
+              <View style={style.circlePerfil}></View>
             </View>
           </View>
 
           <View style={style.containerCircles}>
-            <View style={style.circle}>
-              <Image style={style.contentCircle}></Image>
-            </View>
-            <View style={style.circle}>
-              <Image style={style.contentCircle}></Image>
-            </View>
-            <View style={style.circle}>
-              <Image style={style.contentCircle}></Image>
-            </View>
-            <View style={style.circle}>
-              <Image style={style.contentCircle}></Image>
-            </View>
+            <View style={style.circle}></View>
+            <View style={style.circle}></View>
             <View style={style.circle}></View>
           </View>
           <View style={style.bgWhite}></View>
@@ -84,7 +63,7 @@ const style = StyleSheet.create({
     gap: 6,
     display: "flex",
     flexDirection: "row",
-    backgroundColor: "#123456",
+    backgroundColor: "#ffffff",
     height: 700,
   },
   circle: {
@@ -97,9 +76,7 @@ const style = StyleSheet.create({
     marginTop: 220,
     marginLeft: 20,
   },
-  contentCircle: {
-    display: "none",
-  },
+  contentCircle: {},
   circlePerfil: {
     backgroundColor: "#d8d8d815",
     height: 50,
@@ -109,11 +86,6 @@ const style = StyleSheet.create({
     left: -80,
     justifyContent: "center",
     alignItems: "center",
-  },
-  contentCirclePerfil: {
-    width: 30,
-    height: 30,
-    borderRadius: 25,
   },
   containerLoco: {
     flexDirection: "row",
