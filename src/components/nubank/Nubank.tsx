@@ -13,9 +13,7 @@ export default function Nubank() {
             <View style={style.circlePerfil}>
               <Image
                 style={style.contentCirclePerfil}
-                source={{
-                  uri: "https://media.istockphoto.com/id/814423752/pt/foto/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=is&k=20&c=4coxMJ8QrfXR6wUu2icwbVJrasa_wBqSfogVA-cAm9A=",
-                }}
+                source={require("../../../assets/figurePerson.svg")}
               />
             </View>
             <View style={style.containerLoco}>
@@ -118,7 +116,6 @@ const style = StyleSheet.create({
   },
   containerLoco: {
     flexDirection: "row",
-    gap: 10
-  }
-
+    gap: 10,
+  },
 });
