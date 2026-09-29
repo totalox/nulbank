@@ -13,7 +13,7 @@
     "android": {
       "package": "com.nulbank.myapp",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "",
         "foregroundImage": "",
         "backgroundImage": "",
         "monochromeImage": ""
@@ -29,7 +29,7 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "",
           "image": "",
           "imageWidth": 76
         }
