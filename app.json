@@ -1,28 +1,28 @@
 {
   "expo": {
-    "name": "nubank",
-    "slug": "nubank",
-    "version": "1.0.0",
+    "name": "nulbank",
+    "slug": "nulbank",
+    "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "nubank",
+    "icon": "",
+    "scheme": "nulbank",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": ""
     },
     "android": {
-      "package": "com.nubank.meuapp",
+      "package": "com.nulbank.myapp",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "foregroundImage": "",
+        "backgroundImage": "",
+        "monochromeImage": ""
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": ""
     },
     "plugins": [
       "expo-router",
