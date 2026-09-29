@@ -11,10 +11,7 @@ export default function Nubank() {
         >
           <View style={style.header}>
             <View style={style.circlePerfil}>
-              <Image
-                style={style.contentCirclePerfil}
-                source={require("../../../assets/figurePerson.svg")}
-              />
+              <Image style={style.contentCirclePerfil} />
             </View>
             <View style={style.containerLoco}>
               <View style={style.circlePerfil}>
