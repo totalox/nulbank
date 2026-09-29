@@ -9,6 +9,7 @@ export default function Nubank() {
           showsVerticalScrollIndicator={false}
           showsHorizontalScrollIndicator={false}
         >
+          {/* STACK "HEADER" */}
           <View style={style.header}>
             <View style={style.circlePerfil}>
               <Image style={style.contentCirclePerfil} />
@@ -18,7 +19,10 @@ export default function Nubank() {
                 <Image style={style.contentCirclePerfil} />
               </View>
               <View style={style.circlePerfil}>
-                <Image style={style.contentCirclePerfil} />
+                <Image
+                  style={{ width: 20, height: 20 }}
+                  source={require("../../../assets/credit.svg")}
+                />
               </View>
               <View style={style.circlePerfil}>
                 <Image style={style.contentCirclePerfil} />
@@ -98,21 +102,22 @@ const style = StyleSheet.create({
   },
   circlePerfil: {
     backgroundColor: "#d8d8d815",
-    height: 80,
-    width: 80,
+    height: 50,
+    width: 50,
     borderRadius: 50,
-    top: -30,
-    left: -70,
+    top: -20,
+    left: -80,
     justifyContent: "center",
     alignItems: "center",
   },
   contentCirclePerfil: {
-    width: 50,
-    height: 50,
+    width: 30,
+    height: 30,
     borderRadius: 25,
   },
   containerLoco: {
     flexDirection: "row",
     gap: 10,
+    marginLeft: 135,
   },
 });
