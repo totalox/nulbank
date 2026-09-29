@@ -1,5 +1,5 @@
-// import SplashScreen from "../../../components/SplashScreen/SplashScreen";
-import Nubank from "../../components/nubank/Nubank";
+// import SplashScreen from "./SplashScreen";
+import Nubank from "./Nubank";
 
 export default () => {
   return (
@@ -8,4 +8,4 @@ export default () => {
       <Nubank />
     </>
   );
-}
+};
