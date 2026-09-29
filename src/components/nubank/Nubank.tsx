@@ -10,7 +10,25 @@ export default function Nubank() {
           showsHorizontalScrollIndicator={false}
         >
           <View style={style.header}>
-            <View style={style.headerContent}>testing</View>
+            <View style={style.circlePerfil}>
+              <Image
+                style={style.contentCirclePerfil}
+                source={{
+                  uri: "https://media.istockphoto.com/id/814423752/pt/foto/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=is&k=20&c=4coxMJ8QrfXR6wUu2icwbVJrasa_wBqSfogVA-cAm9A=",
+                }}
+              />
+            </View>
+            <View style={style.containerLoco}>
+              <View style={style.circlePerfil}>
+                <Image style={style.contentCirclePerfil} />
+              </View>
+              <View style={style.circlePerfil}>
+                <Image style={style.contentCirclePerfil} />
+              </View>
+              <View style={style.circlePerfil}>
+                <Image style={style.contentCirclePerfil} />
+              </View>
+            </View>
           </View>
 
           <View style={style.containerCircles}>
@@ -47,9 +65,9 @@ const style = StyleSheet.create({
   header: {
     backgroundColor: "#8b19d6",
     padding: 100,
-    justifyContent: 'flex-start',
-    alignItems: 'flex-start',
-    flexDirection: 'row'
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+    flexDirection: "row",
   },
   lineGray: {
     backgroundColor: "#d9d9d9",
@@ -83,10 +101,24 @@ const style = StyleSheet.create({
   contentCircle: {
     display: "none",
   },
-  headerContent: {
+  circlePerfil: {
     backgroundColor: "#d8d8d815",
-    height: 100,
-    width: 100,
-    borderRadius: 50
+    height: 80,
+    width: 80,
+    borderRadius: 50,
+    top: -30,
+    left: -70,
+    justifyContent: "center",
+    alignItems: "center",
   },
+  contentCirclePerfil: {
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+  },
+  containerLoco: {
+    flexDirection: "row",
+    gap: 10
+  }
+
 });
