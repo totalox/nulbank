@@ -1,5 +1,9 @@
 import { SafeAreaView } from "react-native-safe-area-context";
 import { StyleSheet, Text, View, ScrollView, Image } from "react-native";
+import * as Svg from "react-native-svg";
+import icon from "../../assets/";
+import iconTwo from "../../assets/";
+import iconThree from "../../assets/";
 
 export default function Nubank() {
   return (
@@ -9,13 +13,27 @@ export default function Nubank() {
           showsVerticalScrollIndicator={false}
           showsHorizontalScrollIndicator={false}
         >
-          {/* STACK "HEADER" */}
+          {/* ALL-STACK "HEADER" */}
           <View style={style.header}>
-            <View style={style.circlePerfil}></View>
+            {/* Icon perfil left */}
+            <View style={style.circlePerfil}>
+              {/* IMPORTAR O SVG https://docs.expo.dev/versions/latest/sdk/svg/#svg */}
+              {/* <Svg height="25" width="25">
+
+              </Svg> */}
+            </View>
+            {/* Three icons right */}
             <View style={style.containerLoco}>
-              <View style={style.circlePerfil}></View>
-              <View style={style.circlePerfil}></View>
-              <View style={style.circlePerfil}></View>
+              <View style={style.circlePerfil}>
+              <Image style={style.logotipo} source={icon} />                
+              </View>
+              <View style={style.circlePerfil}>
+              <Image style={style.logotipo} source={iconTwo} />                
+              </View>
+              <View style={style.circlePerfil}>
+              <Image style={style.logotipo} source={iconThree} />                
+              </View>
+
             </View>
           </View>
 
@@ -89,7 +107,13 @@ const style = StyleSheet.create({
   },
   containerLoco: {
     flexDirection: "row",
-    gap: 10,
-    marginLeft: 135,
+    gap: 15,
+    width: 225,
+    left: 120
   },
+  logotipo: {
+    width: 25,
+    height: 25,
+    backgroundColor: "red"
+  }
 });
