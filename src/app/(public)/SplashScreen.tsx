@@ -1,6 +1,6 @@
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Image , StyleSheet } from "react-native";
-import Logo from "../../assets/logo.jpg";
+import Logo from "../../assets/logo.png";
 
 export default function SplashScreen() {
   return (
